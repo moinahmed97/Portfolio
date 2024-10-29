@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Moin's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -24,13 +24,13 @@
             <a href="#">Home</a>
         </li>
         <li>
-            <a href="#">Skills</a>
+            <a href="#skills">Skills</a>
         </li>
         <li>
             <a href="#">Projects</a>
         </li>
         <li>
-            <a href="#">Contact Me</a>
+            <a href="mailto:moinn5810@gmail.com" class="button">Contact Me</a>
         </li>
         </ul>
         <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
@@ -54,10 +54,10 @@
                 user experiences. </span>
         </p>
         <div class="call-to-action">
-            <a href="#" class="button black">
+            <a href="./MoinSyedResume.pdf" class="button black">
             View Resume
         </a>
-            <a href="#" class="button white">
+            <a href="mailto:moinn5810@gmail.com" class="button white">
             Contact Me
         </a>
     </div>
@@ -107,7 +107,7 @@
             
         </div>
     </section>
-    <section class="skills container">
+    <section id="skills" class="skills container">
         <h2><small>About me</small> Skills</h2>
         <div class="holder-blue">
             <div class="left-column">
@@ -150,11 +150,59 @@
             </div>
         </div>
     </section>
-    <section class="work-experience-container">
+
+    <section class="chatbot container">
         <h2>
-            <small>Recent</small>
-            Work Experience
+            <small>
+                Talk to me
+            </small>
+            Chatbot
         </h2>
+        <div class="chatbot-blue">
+            <div class="chat-info">
+                <h3>
+                    Azure AI Chatbot
+                </h3>
+                <p>
+                    This is a chabot I but together which knows my skills, work experience and a copy of my resume. 
+                    You can ask questions about me to get a better idea of who I am and what I've done.
+                </p>
+                <p>
+                    You can download my resume here if you want to take a look at it.
+                    I'm currently looking for new opportunities so if you have a project you think I would be a good fit for, please keep in touch!
+                </p>
+                <a class="button black"href="./MoinSyedResume.pdf">Download Resume</a>
+            </div>
+            <div class="chat-box">
+                <div class="scroll-area"> 
+                    <ul id="chat-log">
+                        <li>
+                            <span class="avatar bot">
+                            AI</span>
+                            <div class="message">
+                                Hi, I'm a friendly chatbot that lets you interact with this portfolio and resume. How can I help?
+                              
+                            </div>
+                        </li>
+                        <li>
+                        <span class="user">
+                            User</span>
+                            <div class="message">
+                                I have a question to ask you about the resume...
+                    
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="chat-message">
+                    <input type="text" placeholder="Hey there, what sklls are you best at?">
+                   <button class="button black">Send</button>
+                </div>
+
+            </div>
+        </div>
+
     </section>
    </main>
 </body>
